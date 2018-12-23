@@ -1,3 +1,5 @@
+Before starting, get any REST client ([Postman](https://www.getpostman.com/)).
+
 # Database
 
 The currently used database is [H2](http://www.h2database.com/).
@@ -26,3 +28,8 @@ Each repository is automatically added to the existing REST API.
 
 # Samples
 
+## Relationship
+
+## Inheritance
+
+## Query
