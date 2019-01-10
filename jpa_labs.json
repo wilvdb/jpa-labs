@@ -1,0 +1,203 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+			"name": "Immortals",
+			"description": "How to deal with Immortal entity",
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"6a1fb2c0-8c22-4ecb-811d-b8c127cec35d",
+				"9092013e-fde0-4075-9cba-409591e50543",
+				"97bdf83d-2b11-4de6-9396-e7263b2c7d0e",
+				"9e626d2c-dcdf-4d06-921a-0ea8e4b1560e",
+				"a9883cd7-0040-42fb-b77f-dd9d45c47557"
+			],
+			"folders_order": [],
+			"folders": [],
+			"requests": [
+				{
+					"id": "6a1fb2c0-8c22-4ecb-811d-b8c127cec35d",
+					"name": "Delete immortal",
+					"url": "http://localhost:8050/immortals/0",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "9092013e-fde0-4075-9cba-409591e50543",
+					"name": "Create immortal",
+					"url": "http://localhost:8050/immortals",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"responses": [
+						{
+							"id": "c0e7b95b-b817-4a0c-8d92-380e8fa3ae5b",
+							"name": "Create immortal Duncan",
+							"status": null,
+							"mime": null,
+							"language": "json",
+							"text": "{\n    \"name\": \"\",\n    \"age\": 480,\n    \"dead\": false,\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8050/immortals/0\"\n        },\n        \"immortal\": {\n            \"href\": \"http://localhost:8050/immortals/0\"\n        }\n    }\n}",
+							"responseCode": {
+								"code": 201,
+								"name": "Created"
+							},
+							"requestObject": {
+								"data": "{\"name\" : \"Duncan MacLeod\", \"age\" : \"480\", \"dead\" : \"false\"}",
+								"dataMode": "raw",
+								"headerData": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"description": "",
+										"type": "text"
+									}
+								],
+								"method": "POST",
+								"pathVariableData": [],
+								"queryParams": [],
+								"url": "http://localhost:8050/immortals"
+							},
+							"headers": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8050/immortals/0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/hal+json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Jan 2019 04:41:47 GMT"
+								}
+							],
+							"cookies": null,
+							"request": "9092013e-fde0-4075-9cba-409591e50543",
+							"collection": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266"
+						}
+					],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"rawModeData": "{\n    \"name\": \"Conor MacLeod\",\n    \"age\": \"320\",\n    \"dead\": \"false\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "97bdf83d-2b11-4de6-9396-e7263b2c7d0e",
+					"name": "Get immortal",
+					"url": "http://localhost:8050/immortals/0",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "9e626d2c-dcdf-4d06-921a-0ea8e4b1560e",
+					"name": "Get immortals",
+					"url": "http://localhost:8050/immortals",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "a9883cd7-0040-42fb-b77f-dd9d45c47557",
+					"name": "Update immortal",
+					"url": "http://localhost:8050/immortals/0",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"rawModeData": "{\n    \"name\": \"Duncan McLeod\",\n    \"age\": 480,\n    \"dead\": false\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "5ffb8659-946f-4e46-9c7a-4f14749e7e80",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}
