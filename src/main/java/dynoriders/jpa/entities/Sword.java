@@ -13,7 +13,7 @@ import java.time.LocalDate;
 public class Sword {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     long id;
     LocalDate creationDate;
     String name;
