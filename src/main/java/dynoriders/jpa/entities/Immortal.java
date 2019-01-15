@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -17,5 +18,6 @@ public class Immortal {
     int age;
     boolean dead;
     // TODO - resolve this (unidirectionnal) relationship first
-    //Collection<Quickening> quickenings = new ArrayList<>();
+    //List<Quickening> quickenings = new ArrayList<>();
+    //Sword sword;
 }
