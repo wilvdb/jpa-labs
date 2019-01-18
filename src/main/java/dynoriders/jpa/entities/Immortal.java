@@ -21,6 +21,6 @@ public class Immortal {
             joinColumns = @JoinColumn(name = "QUICKENING_ID"),
             inverseJoinColumns = @JoinColumn(name = "IMMORTAL_ID"))
     List<Quickening> quickenings = new ArrayList<>();
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.ALL)
     Sword sword;
 }
