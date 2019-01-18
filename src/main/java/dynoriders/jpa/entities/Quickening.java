@@ -15,7 +15,7 @@ public class Quickening {
     long power;
     @ManyToMany
     @JoinTable(name = "IMMORTAL_QUICKENING",
-            joinColumns = @JoinColumn(name = "IMMORTAL_ID"),
-            inverseJoinColumns = @JoinColumn(name = "QUICKENING_ID"))
+            joinColumns = @JoinColumn(name = "QUICKENING_ID"),
+            inverseJoinColumns = @JoinColumn(name = "IMMORTAL_ID"))
     List<Immortal> immortals;
 }
