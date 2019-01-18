@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ImmortalRepository extends PagingAndSortingRepository<Immortal, Long> {
 
-    @Query("select sum(q.power) from Immortal i join Quickening q where i.id = :immortalId")
+    @Query("select sum(q.power) from Immortal i join i.quickenings q where i.id = :immortalId")
     long getTotalQuickeningById(@Param("immortalId") long id);
 }

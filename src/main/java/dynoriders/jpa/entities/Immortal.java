@@ -18,8 +18,8 @@ public class Immortal {
     boolean dead;
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "IMMORTAL_QUICKENING",
-            joinColumns = @JoinColumn(name = "QUICKENING_ID"),
-            inverseJoinColumns = @JoinColumn(name = "IMMORTAL_ID"))
+            joinColumns = @JoinColumn(name = "IMMORTAL_ID"),
+            inverseJoinColumns = @JoinColumn(name = "QUICKENING_ID"))
     List<Quickening> quickenings = new ArrayList<>();
     @OneToOne(cascade = CascadeType.ALL)
     Sword sword;
