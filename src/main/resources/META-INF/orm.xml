@@ -5,10 +5,14 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
         version="2.0">
 
-    <!--<named-native-query name="Immortal.getTotalQuickeningLevel">
+    <named-native-query name="Immortal.findFullById">
         <query>
-            MY QUERY
+            select i.name name, i.age age, i.dead dead, coalesce(sum(q.power), 0) power
+            from IMMORTAL i
+            join IMMORTAL_QUICKENING iq on i.id = iq.immortal_id
+            join QUICKENING q on iq.quickening_id = q.id
+            where i.id = :id
         </query>
-    </named-native-query> -->
+    </named-native-query>
 
 </entity-mappings>

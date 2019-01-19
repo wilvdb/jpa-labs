@@ -1,6 +1,7 @@
 package dynoriders.jpa.repositories;
 
 import dynoriders.jpa.entities.Immortal;
+import dynoriders.jpa.projections.ImmortalView;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
@@ -11,4 +12,7 @@ public interface ImmortalRepository extends PagingAndSortingRepository<Immortal,
 
     @Query("select sum(q.power) from Immortal i join i.quickenings q where i.id = :immortalId")
     long getTotalQuickeningById(@Param("immortalId") long id);
+
+    ImmortalView findFullById(@Param("id") long id);
+
 }
