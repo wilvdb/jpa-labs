@@ -13,11 +13,92 @@
 				"9092013e-fde0-4075-9cba-409591e50543",
 				"97bdf83d-2b11-4de6-9396-e7263b2c7d0e",
 				"9e626d2c-dcdf-4d06-921a-0ea8e4b1560e",
-				"a9883cd7-0040-42fb-b77f-dd9d45c47557"
+				"a9883cd7-0040-42fb-b77f-dd9d45c47557",
+				"aaad4055-855b-49e0-a9ad-10a489d24d85",
+				"35cf0d47-0bb1-4f55-aff7-b0426dd5c299",
+				"ef5702c3-055f-4c6e-8e72-a97b28a6c3ae",
+				"33aa213d-1d53-424a-b61e-30bada231259",
+				"095c83ba-589b-45ee-b8c3-7e96baa09ab7"
 			],
 			"folders_order": [],
 			"folders": [],
 			"requests": [
+				{
+					"id": "095c83ba-589b-45ee-b8c3-7e96baa09ab7",
+					"name": "Create/Update immortal sword",
+					"url": "http://localhost:8050/immortals/1/sword",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "text/uri-list"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"rawModeData": "http://localhost:8050/swords/3",
+					"headers": "Content-Type: text/uri-list\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "33aa213d-1d53-424a-b61e-30bada231259",
+					"name": "Get immortal sword",
+					"url": "http://localhost:8050/immortals/1/sword",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"pathVariables": {}
+				},
+				{
+					"id": "35cf0d47-0bb1-4f55-aff7-b0426dd5c299",
+					"name": "Search Immortals - full",
+					"url": "http://localhost:8050/immortals/search/findFullById?id=1",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"headers": "",
+					"pathVariables": {}
+				},
 				{
 					"id": "6a1fb2c0-8c22-4ecb-811d-b8c127cec35d",
 					"name": "Delete immortal",
@@ -42,7 +123,7 @@
 					"id": "9092013e-fde0-4075-9cba-409591e50543",
 					"name": "Create immortal",
 					"url": "http://localhost:8050/immortals",
-					"description": "",
+					"description": null,
 					"data": [],
 					"dataMode": "raw",
 					"headerData": [
@@ -122,7 +203,7 @@
 				{
 					"id": "97bdf83d-2b11-4de6-9396-e7263b2c7d0e",
 					"name": "Get immortal",
-					"url": "http://localhost:8050/immortals/0",
+					"url": "http://localhost:8050/immortals/1",
 					"description": "",
 					"data": null,
 					"dataMode": null,
@@ -142,7 +223,7 @@
 				{
 					"id": "9e626d2c-dcdf-4d06-921a-0ea8e4b1560e",
 					"name": "Get immortals",
-					"url": "http://localhost:8050/immortals",
+					"url": "http://localhost:8050/immortals/",
 					"description": "",
 					"data": null,
 					"dataMode": null,
@@ -162,7 +243,7 @@
 				{
 					"id": "a9883cd7-0040-42fb-b77f-dd9d45c47557",
 					"name": "Update immortal",
-					"url": "http://localhost:8050/immortals/0",
+					"url": "http://localhost:8050/immortals/2",
 					"description": "",
 					"data": [],
 					"dataMode": "raw",
@@ -184,8 +265,393 @@
 					"currentHelper": null,
 					"helperAttributes": null,
 					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
-					"rawModeData": "{\n    \"name\": \"Duncan McLeod\",\n    \"age\": 480,\n    \"dead\": false\n}",
+					"rawModeData": "{\n    \"id\": \"2\",\n    \"name\": \"Conor MacLeod\",\n    \"age\": \"320\",\n    \"dead\": \"false\",\n    \"sword\" : {\n    \"id\": \"1\"\n}\n}",
 					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "aaad4055-855b-49e0-a9ad-10a489d24d85",
+					"name": "Search Immortals - getTotal",
+					"url": "http://localhost:8050/immortals/search/getTotalQuickeningById?immortalId=1",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "immortalId",
+							"value": "1",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "ef5702c3-055f-4c6e-8e72-a97b28a6c3ae",
+					"name": "Get immortal quickenings",
+					"url": "http://localhost:8050/immortals/1/quickenings",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "ba0b4a9b-c62c-4d2a-b1b8-006294d70266",
+					"pathVariables": {}
+				}
+			]
+		},
+		{
+			"id": "dc0d80d2-5774-462a-80ea-396781e2b882",
+			"name": "Swords",
+			"description": "How to deal with Immortal entity",
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"0508eeb8-26e6-4166-bb28-37e1175e9652",
+				"1acccd6e-8374-4f51-867c-d09357087e96",
+				"55bb8071-26cc-4be3-8768-f5c66b74e115",
+				"abc4e689-7af3-47e1-bf8b-8bfc4ef684b8",
+				"e0a216e8-0334-4ea7-a519-7f0b03608d34"
+			],
+			"folders_order": [],
+			"folders": [],
+			"requests": [
+				{
+					"id": "0508eeb8-26e6-4166-bb28-37e1175e9652",
+					"name": "Delete sword",
+					"url": "http://localhost:8050/swords/0",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "dc0d80d2-5774-462a-80ea-396781e2b882",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "1acccd6e-8374-4f51-867c-d09357087e96",
+					"name": "Create sword",
+					"url": "http://localhost:8050/swords",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"responses": [
+						{
+							"id": "06c93a1e-eca5-49cf-ad91-4bd3b1bc3936",
+							"name": "Create Toled",
+							"status": null,
+							"mime": null,
+							"language": null,
+							"text": "{ \"creationDate\": \"2019-01-15\", \"name\": \"Toled Salamank\" }",
+							"responseCode": null,
+							"requestObject": {
+								"data": "{\n    \"name\": \"Conor MacLeod\",\n    \"age\": \"320\",\n    \"dead\": \"false\"\n}",
+								"dataMode": "raw",
+								"headerData": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"description": "",
+										"type": "text"
+									}
+								],
+								"method": "POST",
+								"pathVariableData": [],
+								"queryParams": [],
+								"url": "http://localhost:8050/swords"
+							},
+							"headers": null,
+							"cookies": null,
+							"request": "1acccd6e-8374-4f51-867c-d09357087e96",
+							"collection": "dc0d80d2-5774-462a-80ea-396781e2b882"
+						}
+					],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "dc0d80d2-5774-462a-80ea-396781e2b882",
+					"rawModeData": "{ \"name\": \"test\",\n\"creationDate\":\"2019-01-15\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "55bb8071-26cc-4be3-8768-f5c66b74e115",
+					"name": "Get swords",
+					"url": "http://localhost:8050/swords",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "dc0d80d2-5774-462a-80ea-396781e2b882",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "abc4e689-7af3-47e1-bf8b-8bfc4ef684b8",
+					"name": "Update sword",
+					"url": "http://localhost:8050/swords/1",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/json"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "dc0d80d2-5774-462a-80ea-396781e2b882",
+					"rawModeData": "{\n    \"name\": \"Toled\",\n    \"creationDate\": \"2019-01-15\"\n    \n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "e0a216e8-0334-4ea7-a519-7f0b03608d34",
+					"name": "Get sword",
+					"url": "http://localhost:8050/swords/1",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "dc0d80d2-5774-462a-80ea-396781e2b882",
+					"headers": "",
+					"pathVariables": {}
+				}
+			]
+		},
+		{
+			"id": "f24fa915-5943-41d7-9e34-5a868b08a1c8",
+			"name": "Quickening",
+			"description": "How to deal with Immortal entity",
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"e39b4860-0e1f-459a-8eb6-66c1d3bbef77",
+				"b93457da-817e-49da-9016-38a29c4004bd",
+				"9ac39e76-95e3-41ff-a983-c1f572f6fe21",
+				"07080d4e-6e68-4597-b118-938d6238f323",
+				"aeee000c-91d3-4784-88da-982e13bbc735"
+			],
+			"folders_order": [],
+			"folders": [],
+			"requests": [
+				{
+					"id": "07080d4e-6e68-4597-b118-938d6238f323",
+					"name": "Update quickening",
+					"url": "http://localhost:8050/quickenings/1",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/json"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "f24fa915-5943-41d7-9e34-5a868b08a1c8",
+					"rawModeData": "{\n    \"name\": \"Toled\",\n    \"creationDate\": \"2019-01-15\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "9ac39e76-95e3-41ff-a983-c1f572f6fe21",
+					"name": "Get quickenings",
+					"url": "http://localhost:8050/quickenings",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "f24fa915-5943-41d7-9e34-5a868b08a1c8",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "aeee000c-91d3-4784-88da-982e13bbc735",
+					"name": "Get quickening",
+					"url": "http://localhost:8050/quickenings/1",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "f24fa915-5943-41d7-9e34-5a868b08a1c8",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "b93457da-817e-49da-9016-38a29c4004bd",
+					"name": "Create quickening",
+					"url": "http://localhost:8050/quickenings",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/json"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"responses": [
+						{
+							"id": "dfc7d8f8-6861-44c6-ab4e-592735fcd96d",
+							"name": "Create Toled",
+							"status": null,
+							"mime": null,
+							"language": null,
+							"text": "{ \"creationDate\": \"2019-01-15\", \"name\": \"Toled Salamank\" }",
+							"responseCode": null,
+							"requestObject": {
+								"data": "{\n    \"name\": \"Conor MacLeod\",\n    \"age\": \"320\",\n    \"dead\": \"false\"\n}",
+								"dataMode": "raw",
+								"headerData": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"description": "",
+										"type": "text"
+									}
+								],
+								"method": "POST",
+								"pathVariableData": [],
+								"queryParams": [],
+								"url": "http://localhost:8050/swords"
+							},
+							"headers": null,
+							"cookies": null,
+							"request": "b93457da-817e-49da-9016-38a29c4004bd",
+							"collection": "f24fa915-5943-41d7-9e34-5a868b08a1c8"
+						}
+					],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "f24fa915-5943-41d7-9e34-5a868b08a1c8",
+					"rawModeData": "{\n    \"power\": \"650\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "e39b4860-0e1f-459a-8eb6-66c1d3bbef77",
+					"name": "Delete quickening",
+					"url": "http://localhost:8050/quickenings/0",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [],
+					"folder": null,
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "f24fa915-5943-41d7-9e34-5a868b08a1c8",
+					"headers": "",
 					"pathVariables": {}
 				}
 			]
@@ -193,7 +659,7 @@
 	],
 	"environments": [
 		{
-			"id": "5ffb8659-946f-4e46-9c7a-4f14749e7e80",
+			"id": "689d2389-c945-4b25-883f-10f4902a8d80",
 			"name": "My Workspace - globals",
 			"values": []
 		}
